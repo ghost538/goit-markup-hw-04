@@ -105,13 +105,14 @@ button {
 /* --Nav-- */
 
 .header {
-	border-bottom: 1px solid #E7E9FC;
+	border-bottom: 1px solid #e7e9fc;
 	padding: 24px 0;
-}
+	box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+		0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+	}
 .container-header {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 }
 
 .nav-menu {
@@ -192,10 +193,12 @@ button {
 	border-radius: 4px;
 	padding: 16px 32px;
 	min-width: 180px;
+	border: 0;
 }
 .hero-btn:is(:focus,:hover) {
 	color: #ffffff;
 	background-color: var(--hover-color);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* --Main Text-- */
@@ -296,7 +299,7 @@ button {
 	border-color: var(--hover-color);
 }
 
-.customers-icon:is(:focus, :hover) svg {
+.customers-link:is(:focus, :hover) .customers-icon {
 	fill: var(--hover-color);
 }
 
