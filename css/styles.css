@@ -203,6 +203,16 @@ button {
 
 /* --Main Text-- */
 
+.main-svg {
+	background-color: #f4f4fd;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 112px;
+	width: 264px;
+	margin-bottom: 8px;
+}
+
 .list-title {
 	font-style: normal;
 	font-weight: 500;
@@ -337,6 +347,7 @@ button {
 .breadcrumbs-btn:is(:focus, :hover) {
 	background-color: var(--hover-color);
 	color: #ffffff;
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .breadcrumbs-border {
@@ -345,15 +356,13 @@ button {
 	border-right: 1px solid #E7E9FC;
 }
 
-/* --picture-- */
-
-/* .picture {
-
+.picture:is(:focus, :hover) {
+	border: 0.5px solid #F4F4FD;
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+	cursor: pointer;
 }
 
-.picture-width {
-
-} */
+/* --picture-- */
 
 /* --Footer-- */
 
