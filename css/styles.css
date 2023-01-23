@@ -309,7 +309,7 @@ button {
 	border-color: var(--hover-color);
 }
 
-.customers-link:is(:focus, :hover) .customers-icon {
+.customers-link:is(:focus, :hover) svg {
 	fill: var(--hover-color);
 }
 
@@ -347,6 +347,7 @@ button {
 .breadcrumbs-btn:is(:focus, :hover) {
 	background-color: var(--hover-color);
 	color: #ffffff;
+	border-color: var(--hover-color);
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -356,13 +357,16 @@ button {
 	border-right: 1px solid #E7E9FC;
 }
 
-.picture:is(:focus, :hover) {
-	border: 0.5px solid #F4F4FD;
-	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-	cursor: pointer;
+.picture {
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-/* --picture-- */
+.picture:is(:focus, :hover) {
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+		0px 1px 1px rgba(46, 47, 66, 0.16),
+		0px 2px 1px rgba(46, 47, 66, 0.08);
+	cursor: pointer;
+}
 
 /* --Footer-- */
 
